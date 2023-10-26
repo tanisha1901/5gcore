@@ -1,0 +1,22 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: open5g-app
+  namespace: openshift-gitops
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/tanisha1901/open5gcore.git
+    chart: helm-chart
+    path: open5g-pages/helm-chart
+    targetRevision: 0.0.1
+  destination:
+    namespace: open5g-application
+    name: in-cluster
+  syncPolicy:
+    automated:
+      prune: false
+      selfHeal: false
+    syncOptions:
+      - CreateNamespace=true
+
