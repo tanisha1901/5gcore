@@ -8,8 +8,8 @@ spec:
   source:
     repoURL: https://github.com/tanisha1901/open5gcore.git
     chart: helm-chart
-    path: open5g-pages/helm-chart
-    targetRevision: 0.0.1
+    path: helm-chart
+    targetRevision: open5g-pages
   destination:
     namespace: open5g-application
     name: in-cluster
