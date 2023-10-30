@@ -12,7 +12,7 @@ spec:
     targetRevision: open5g-pages
   destination:
     namespace: open5g-application
-    name: https://kubernetes.default.svc
+    name: in-cluster
   syncPolicy:
     automated:
       prune: false
