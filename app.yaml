@@ -9,10 +9,10 @@ spec:
     repoURL: https://github.com/tanisha1901/open5gcore.git
     chart: helm-chart
     path: helm-chart
-    targetRevision: open5g-pages
+    targetRevision: 0.0.1
   destination:
     namespace: open5g-application
-    name: in-cluster
+    server: https://kubernetes.default.svc
   syncPolicy:
     automated:
       prune: false
