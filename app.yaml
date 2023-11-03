@@ -10,7 +10,7 @@ spec:
     path: helm-chart
     targetRevision: open5g-pages
   destination:
-    namespace: open5g-application
+    namespace: openshift-gitops
     server: https://kubernetes.default.svc
   syncPolicy:
     automated:
