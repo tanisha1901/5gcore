@@ -7,9 +7,8 @@ spec:
   project: default
   source:
     repoURL: https://github.com/tanisha1901/open5gcore
-    chart: helm-chart
     path: helm-chart
-    targetRevision: 0.0.1
+    targetRevision: open5g-pages
   destination:
     namespace: open5g-application
     server: https://kubernetes.default.svc
